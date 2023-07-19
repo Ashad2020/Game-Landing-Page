@@ -240,6 +240,7 @@ footer {
 .link-set-one {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
   max-width: 700px;
@@ -248,7 +249,7 @@ footer {
 }
 .link-set-one li {
   flex-shrink: 0;
-  flex-basis: 90px;
+  flex-basis: 100px;
   margin-bottom: 10px;
 }
 
@@ -273,7 +274,7 @@ footer {
 }
 .link-set-three li {
   flex-shrink: 0;
-  flex-basis: 160px;
+  flex-basis: 180px;
   margin-bottom: 10px;
 }
 .link-set-three a {
@@ -332,5 +333,11 @@ footer p {
   }
   .link-set-three {
     flex-wrap: wrap;
+    /* max-width: 400px; */
+    gap: 0;
+    /* justify-content: center; */
+  }
+  .link-set-three li {
+    flex-basis: 150px;
   }
 }
