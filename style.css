@@ -8,8 +8,8 @@ body {
   font-family: "Work Sans", sans-serif;
   color: #534c64;
 }
-.logo-container img {
-  max-width: 50%;
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -60,6 +60,51 @@ nav {
   color: #3c354f;
 }
 
+/* banner  */
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* online games */
+.online-games-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* play instant online */
+.play-instantly-section {
+  display: flex;
+  align-items: center;
+}
+.play-instantly-img-container {
+  position: relative;
+}
+
+.absolute-img {
+  position: absolute;
+  left: -30%;
+  bottom: -10%;
+  max-width: 50%;
+}
+
+/* game types */
+
+.game-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item {
+  /* flex-shrink: 0; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-basis: 200px;
+}
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
@@ -68,5 +113,18 @@ nav {
   .nav-ul {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .banner-container {
+    flex-direction: column-reverse;
+    /* align-items: center; */
+  }
+
+  .online-games-container {
+    grid-template-columns: 1fr;
+  }
+
+  .play-instantly-section {
+    flex-direction: column;
   }
 }
