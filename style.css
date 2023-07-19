@@ -86,7 +86,7 @@ nav {
 
 .banner-content h2 {
   /* text-align: center; */
-  font-size: 95px;
+  font-size: 6rem;
   font-weight: 800;
   text-transform: uppercase;
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -130,7 +130,7 @@ nav {
 .online-games-section h2 {
   color: #0b0223;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 3rem;
 }
 .online-games-section p {
   margin: 1em 0;
@@ -327,6 +327,74 @@ footer p {
   margin-top: 25px;
   text-align: cetner;
 }
+
+@media screen and (max-width: 792px) {
+  .online-games-section h2,
+  .play-instantly-section-content h2,
+  .banner-content h3 {
+    font-size: 2.5rem;
+  }
+  .nav-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .nav-ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner-container {
+    flex-direction: column-reverse;
+    /* align-items: center; */
+  }
+
+  .banner-content {
+    text-align: center;
+  }
+  .online-games-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .play-instantly-section {
+    margin-top: 50px;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+  }
+  .main-img {
+    max-width: 80%;
+  }
+  .absolute-img {
+    left: -5%;
+
+    max-width: 30%;
+  }
+
+  .game-types {
+    /* grid-template-columns: repeat(3, 1fr); */
+    font-size: 0.6rem;
+    gap: 10px;
+    min-width: 400px;
+  }
+
+  .game-types .item {
+    flex-basis: 180px;
+    font-size: 0.8rem;
+  }
+  footer {
+    padding: 40px;
+  }
+  .link-set-three {
+    flex-wrap: wrap;
+    /* max-width: 400px; */
+    gap: 0;
+    /* justify-content: center; */
+  }
+  .link-set-three li {
+    flex-basis: 150px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
