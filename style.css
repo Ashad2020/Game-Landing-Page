@@ -66,8 +66,53 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
 }
 
+.banner-content h3 {
+  color: #0b0223;
+  /* text-align: center; */
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.banner-content h2 {
+  /* text-align: center; */
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-content p {
+  color: #534c64;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+.btn {
+  font-size: 1.25rem;
+  border-radius: 48px;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  padding: 1em 2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-signin {
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+}
+
+.btn-rogue {
+  background: #4ec5f7;
+}
 /* online games */
 .online-games-container {
   display: grid;
