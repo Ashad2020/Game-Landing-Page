@@ -225,7 +225,7 @@ nav {
 footer {
   text-align: center;
   background: #0b0223;
-  /* padding: px; */
+  padding: 50px 0;
 }
 .footer-logo-container {
   display: flex;
@@ -284,6 +284,7 @@ footer {
 }
 
 footer p {
+  margin-top: 25px;
   text-align: cetner;
 }
 @media screen and (max-width: 576px) {
