@@ -184,6 +184,16 @@ nav {
   gap: 5px;
   flex-basis: 200px;
 }
+
+.item:hover {
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #ff42a5;
+  border-radius: 50px;
+  /* background: #fff; */
+}
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
