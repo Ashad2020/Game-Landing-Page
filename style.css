@@ -114,6 +114,26 @@ nav {
   background: #4ec5f7;
 }
 /* online games */
+
+.online-games-section {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.online-games-section h2 {
+  color: #0b0223;
+  font-weight: 700;
+  font-size: 48px;
+}
+.online-games-section p {
+  margin: 1em 0;
+}
+.funny-videos {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .online-games-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
