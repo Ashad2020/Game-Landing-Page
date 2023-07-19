@@ -187,7 +187,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 5px;
-  /* flex-basis: 200px; */
+  border: 1px solid transparent;
+  /* flex-basis: 100px; */
 }
 
 .item img {
