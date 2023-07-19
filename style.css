@@ -194,6 +194,7 @@ nav {
   grid-template-rows: repeat(2, 1fr); */
   gap: 20px;
   margin-top: 100px;
+  margin-bottom: 80px;
   font-size: 1rem;
 }
 .item {
@@ -218,6 +219,72 @@ nav {
   border-radius: 50px;
   /* background: #fff; */
 }
+
+/* footer */
+
+footer {
+  text-align: center;
+  background: #0b0223;
+  /* padding: px; */
+}
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+}
+.footer-title {
+  color: #fff;
+}
+.footer-title span {
+  color: #ff42a5;
+}
+.link-set-one {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 700px;
+  margin: 25px auto;
+  /* margin-top: 25px; */
+}
+.link-set-one li {
+  flex-shrink: 0;
+  flex-basis: 90px;
+  margin-bottom: 10px;
+}
+
+.link-set-one a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-set-three {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+
+  max-width: 700px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.link-set-three li {
+  flex-shrink: 0;
+  flex-basis: 160px;
+  margin-bottom: 10px;
+}
+.link-set-three a {
+  color: inherit;
+  text-decoration: none;
+  /* margin-right: 10px; */
+}
+
+footer p {
+  text-align: cetner;
+}
 @media screen and (max-width: 576px) {
   .nav-container {
     flex-direction: column;
@@ -233,6 +300,9 @@ nav {
     /* align-items: center; */
   }
 
+  .banner-content {
+    text-align: center;
+  }
   .online-games-container {
     grid-template-columns: 1fr;
   }
@@ -255,5 +325,12 @@ nav {
     /* grid-template-columns: repeat(3, 1fr); */
     font-size: 0.6rem;
     gap: 15px;
+    min-width: 400px;
+  }
+  footer {
+    padding: 40px;
+  }
+  .link-set-three {
+    flex-wrap: wrap;
   }
 }
